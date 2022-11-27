@@ -41,7 +41,7 @@ jobs:
         run: pip install poetry && poetry config virtualenvs.create false
 
       - name: Install requirements
-        run: poetry install --extras dev --no-interaction --no-ansi
+        run: poetry install --no-interaction --no-ansi
 
       - name: Run tests
-        run: pytest
+        run: python -m unittest tests
