@@ -1,0 +1,90 @@
+[[package]]
+name = "flake8"
+version = "6.0.0"
+description = "the modular source code checker: pep8 pyflakes and co"
+category = "main"
+optional = true
+python-versions = ">=3.8.1"
+
+[package.dependencies]
+mccabe = ">=0.7.0,<0.8.0"
+pycodestyle = ">=2.10.0,<2.11.0"
+pyflakes = ">=3.0.0,<3.1.0"
+
+[[package]]
+name = "flake8-isort"
+version = "5.0.3"
+description = "flake8 plugin that integrates isort ."
+category = "main"
+optional = true
+python-versions = ">=3.7"
+
+[package.dependencies]
+flake8 = "*"
+isort = ">=4.3.5,<6"
+
+[package.extras]
+test = ["pytest"]
+
+[[package]]
+name = "isort"
+version = "5.10.1"
+description = "A Python utility / library to sort Python imports."
+category = "main"
+optional = true
+python-versions = ">=3.6.1,<4.0"
+
+[package.extras]
+pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
+requirements_deprecated_finder = ["pipreqs", "pip-api"]
+colors = ["colorama (>=0.4.3,<0.5.0)"]
+plugins = ["setuptools"]
+
+[[package]]
+name = "mccabe"
+version = "0.7.0"
+description = "McCabe checker, plugin for flake8"
+category = "main"
+optional = true
+python-versions = ">=3.6"
+
+[[package]]
+name = "pathlib"
+version = "1.0.1"
+description = "Object-oriented filesystem paths"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pycodestyle"
+version = "2.10.0"
+description = "Python style guide checker"
+category = "main"
+optional = true
+python-versions = ">=3.6"
+
+[[package]]
+name = "pyflakes"
+version = "3.0.1"
+description = "passive checker of Python programs"
+category = "main"
+optional = true
+python-versions = ">=3.6"
+
+[extras]
+dev = ["flake8", "flake8-isort"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "538dba44eca597e47ceebf5868b366841137c13f2cbd2ac8ee681964321c91dc"
+
+[metadata.files]
+flake8 = []
+flake8-isort = []
+isort = []
+mccabe = []
+pathlib = []
+pycodestyle = []
+pyflakes = []

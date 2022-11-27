@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "external_sort"
+version = "0.1.0"
+description = ""
+authors = ["ZZaRRyaDD <odddellarobea@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.9"
+pathlib = "1.0.1"
+
+flake8 = {version = "6.0.0", optional = true}
+flake8-isort = {version = "5.0.3", optional = true}
+
+[tool.poetry.extras]
+dev = [
+    "flake8",
+    "flake8-isort",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
