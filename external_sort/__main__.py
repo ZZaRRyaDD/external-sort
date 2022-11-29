@@ -3,8 +3,8 @@ import argparse
 import os
 from typing import Optional, Union
 
-from constants import Actions, Arguments
-from external_sort import external_multithreaded_natural_merge_sort
+from external_sort.constants import Actions, Arguments
+from external_sort.external_sort import external_multithreaded_natural_merge_sort
 
 
 def get_file(type_files: str) -> Union[list, bool]:
@@ -292,6 +292,8 @@ def main() -> None:
                 type_data,
             ):
                 print("Введены не все параметры")
+        elif action == Actions.EXIT:
+            print("Сеанс завершен. Успехов!")
         else:
             print(f"Введите корректное значение. Введено {action}.")
 

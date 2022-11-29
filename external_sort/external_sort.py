@@ -4,7 +4,7 @@ import os
 import pathlib
 from typing import Optional, Union
 
-from my_file import MyFile
+from external_sort.my_file import MyFile
 
 PathTypeList = Union[list, pathlib.Path]
 PathTypeStr = Union[MyFile, pathlib.Path]

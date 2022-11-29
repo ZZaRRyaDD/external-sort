@@ -15,13 +15,13 @@ poetry install
 **Использовать программу можно с помощью меню**
 
 ```bash
-python __main__.py
+python -m external_sort
 ```
 
 **Либо при помощи аргументов командной строки**
 
 ```bash
-python __main__.py --f test.txt --r True --t 'i'
+python -m external_sort --f test.txt --r True --t 'i'
 ```
 
 **Предусмотрено**
